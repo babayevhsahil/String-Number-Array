@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+   <body>
+    <button onclick="myFunction()">OK</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  let text = "Click OK or Cancel";
+  if (confirm(text) == true) {
+    text = "You click OK";
+  } else {
+    text = "You click canceled";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+<div>
+  <button onclick="Input()" id="btn">
+    Age verification
+  </button>
+</div>
+<input id="inp" type="text" placeholder="Enter group number ">
+  <button onclick="Show()">Please Enter Group Name</button>
+    <script src="js/app.js"></script>
+   </body>
+</html>
